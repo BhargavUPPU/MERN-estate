@@ -37,9 +37,8 @@ export default function SignIn() {
     navigate('/')
   }
     catch(error){
-      dispatch(signInFailure(data.message));
+      dispatch(signInFailure(error.message));
     }
-    console.log(data); 
   };
   return (
     <div className='p-3 max-w-lg mx-auto'>
